@@ -1,0 +1,54 @@
+c:/proyectos <<<< NUNCA un git init
+C:/proyectos/proyecto1 <<<< ACA SI git init
+C:/proyectos/proyecto2 <<<< ACA SI git init
+C:/proyectos/proyecto3 <<<< ACA SI git init
+
+
+
+- Crear una carpeta
+
+- Nombres en minuscula y separados por guiones
+
+MAL: "products controllers.js"
+
+BIEN: "products-controllers.js"
+
+BIEN: "productsControllers.js"
+
+- cd nombre carpeta
+
+- Inicializar GIT en la carpeta
+
+> git init
+
+- Inicializar NPM en la carpeta
+
+> npm init -y
+
+> npm start
+
+home.js
+app.js
+main.js
+
+1)	Crear una carpeta
+2)	Crear los directorios con nombres en minúsculas y palabras separadas por guiones, y archivos igual o con camelCase (por ej: \carpeta-creada\archivo-creado.js o \carpeta-creada\archivoCreado.js)
+3)	Inicializar GIT en la carpeta:
+a.	> git init
+b.	Esto crea el repositorio en esta carpeta.
+4)	Inicializar NPM en la misma carpeta (node package manager: permite instalar librerías adicionales):
+a.	> npm init -y
+b.	Esto crea el package.json que es como un manifiesto de npm. Este paquete conviene completarlo bien si se va a publicar el proyecto.
+5)	Crear el archivo principal: generalmente se pone index.js y se pone en la carpeta principal.
+6)	Configurar la ejecución del archivo js de arranque de proyecto en el package.json
+a.	(…) “scripts”: { “start”: “node index.js” }, (…)
+
+Agregarle el repositorio creado en github
+
+el primer paso es git remote add origin URL 
+pruebo con git remoto -v
+agrego los archivos --> git add index.js y git add package.json
+git commit -m "NOMBRE COMIT"
+git push origin main
+
+Crear archivo .gitignore para que esas cosas no se suban, como todo lo que nos bajamos de npm
