@@ -34,4 +34,5 @@ let actor = {
 console.log(`Nombre: ${actor.nombre}`);
 console.log(`Nombre: ${actor['nombre']}`);
 
+console.log("hola cami")
 
